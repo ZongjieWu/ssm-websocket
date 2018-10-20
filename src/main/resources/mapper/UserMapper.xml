@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.UserMapper">
+
+  <resultMap id="BaseResultMap" type="com.wzj.model.User">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="img1" jdbcType="VARCHAR" property="img1" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="openid" jdbcType="VARCHAR" property="openid" />
+    <result column="kindergarten" jdbcType="INTEGER" property="kindergarten" />
+    <result column="uid" jdbcType="INTEGER" property="uid" />
+    <result column="money" jdbcType="DECIMAL" property="money" />
+    <result column="integrals" jdbcType="VARCHAR" property="integrals" />
+    <result column="addtime" jdbcType="VARCHAR" property="addtime" />
+    <result column="mobile_phone" jdbcType="VARCHAR" property="mobilePhone" />
+    <result column="pwd" jdbcType="VARCHAR" property="pwd" />
+    <result column="sex" jdbcType="INTEGER" property="sex" />
+    <result column="birthday" jdbcType="VARCHAR" property="birthday" />
+    <result column="frozen_money" jdbcType="DECIMAL" property="frozenMoney" />
+    <result column="pay_points" jdbcType="INTEGER" property="payPoints" />
+    <result column="forzen_money" jdbcType="INTEGER" property="forzenMoney" />
+    <result column="last_login" jdbcType="VARCHAR" property="lastLogin" />
+    <result column="last_ip" jdbcType="VARCHAR" property="lastIp" />
+    <result column="visit_count" jdbcType="INTEGER" property="visitCount" />
+    <result column="is_special" jdbcType="INTEGER" property="isSpecial" />
+    <result column="is_validated" jdbcType="INTEGER" property="isValidated" />
+    <result column="credit_line" jdbcType="DECIMAL" property="creditLine" />
+  </resultMap>
+
+  <select id="getById" parameterType="java.lang.Long" resultMap="BaseResultMap">
+      select * from user where id = #{id}
+  </select>
+</mapper>

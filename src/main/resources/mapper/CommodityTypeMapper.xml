@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.wzj.mapper.CommodityTypeMapper" >
+  <resultMap id="BaseResultMap" type="com.wzj.model.CommodityType" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="type_name" property="typeName" jdbcType="VARCHAR" />
+    <result column="type_img" property="typeImg" jdbcType="VARCHAR" />
+    <result column="status" property="status" jdbcType="INTEGER" />
+    <result column="sotck" property="sotck" jdbcType="INTEGER" />
+    <result column="type_id" property="typeId" jdbcType="BIGINT" />
+    <result column="kindergarten_id" property="kindergartenId" jdbcType="BIGINT" />
+  </resultMap>
+</mapper>
